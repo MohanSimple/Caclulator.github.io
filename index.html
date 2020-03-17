@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		body {
+
+			background-color:black;
+			position: relative;
+			margin-left: 520px;
+			margin-top: 40px;
+			box-shadow: (2px, 2px, 2px);
+		}
+
+		.keys {
+			cursor: pointer;
+			background-image: linear-gradient(maroon, darkcyan);
+			box-shadow: 2px;
+			border-style: ridge;
+			border-radius: 25px;
+			height: 50px;
+			width: 50px;
+			color: blanchedalmond;
+			font-size: 20px;
+			font-family: cursive;
+			margin: 2px;
+		}
+
+		.textview {
+			background-color: rgba(29, 205, 236, 0.993);
+			height: 40px;
+			width: 220px;
+			font-size: 20px;
+			font-family: cursive;
+			border-radius: 45px;
+			color: maroon;
+
+			margin: 2px;
+
+		}
+
+		form {
+			border-radius: 40px;
+			margin-right: 68%;
+			padding: 20px;
+			background-image: linear-gradient(maroon, grey);
+			box-shadow: 6px 8px 4px darkcyan;
+			
+		}
+		.textview:hover{
+			background-image:linear-gradient(-35deg,black, darkslategrey)
+		}
+		.keys:hover{
+			background-image:linear-gradient(black, darkcyan);
+		}
+		.keys:active{
+			background-image:radial-gradient(darkcyan,darkolivegreen)
+		}
+		form:hover{
+			background-image:linear-gradient(indianred,black);
+		}
+/* div{
+width:100px;
+height:100px;
+border-top-right-radius: 13px;
+border-bottom-left-radius:13px;
+background-image:linear-gradient(darkcyan,maroon);
+animation:magic infinite;
+
+		}
+		@keyframes magic{
+			0%{top:20px;background-color:darkcyan;}
+			20%{top:100px;background-color:indianred;}
+			50%{top:100px}
+    	} */
+		
+	</style>
+	<title>Calculator
+	</title>
+</head>
+
+<body>
+	<p>
+		
+		<form name="calculator">
+			<input type="text" class="textview" name="textview" />
+			<br>
+			<input type="button" class="keys" value="1" onclick="calculator.textview.value+='1'" />
+			<input type="button" class="keys" value="2" onclick="calculator.textview.value+='2'" />
+			<input type="button" class="keys" value="3" onclick="calculator.textview.value+='3'" />
+			<input type="button" class="keys" value="+" onclick="calculator.textview.value+='+'" />
+			<br>
+
+			
+
+			<input type="button" class="keys" value="4" onclick="calculator.textview.value+='4'" />
+			<input type="button" class="keys" value="5" onclick="calculator.textview.value+='5'" />
+			<input type="button" class="keys" value="6" onclick="calculator.textview.value+='6'" />
+			<input type="button" class="keys" value="-" onclick="calculator.textview.value+='-'" />
+
+			<br>
+			<input type="button" class="keys" value="7" onclick="calculator.textview.value+='7'" />
+			<input type="button" class="keys" value="8" onclick="calculator.textview.value+='8'" />
+			<input type="button" class="keys" value="9" onclick="calculator.textview.value+='9'" />
+			<input type="button" class="keys" value="*" onclick="calculator.textview.value+='*'" />
+
+			<br>
+			<input type="button" class="keys" value="/" onclick="calculator.textview.value+='/'" />
+			<input type="button" class="keys" value="0" onclick="calculator.textview.value+='0'" />
+			<input type="button" class="keys" value="C" onclick="calculator.textview.value=''" />
+			<input type="button" class="keys" value="="onclick="calculator.textview.value=eval(calculator.textview.value)" />
+			<br>
+
+		</form>
+	</p>
+	<div>
+			Mohan
+	</div>
+
+
+</body>
+
+</html>
